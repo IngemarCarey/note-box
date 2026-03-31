@@ -1,0 +1,28 @@
+{
+  "name": "note-box",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Quiet onchain notes mini app on Base",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@tanstack/react-query": "^5.95.2",
+    "next": "^15.5.14",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "viem": "^2.47.6",
+    "wagmi": "^3.6.0"
+  },
+  "devDependencies": {
+    "@types/node": "^25.5.0",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "eslint": "^9.39.4",
+    "eslint-config-next": "^16.2.1",
+    "typescript": "^6.0.2"
+  }
+}
