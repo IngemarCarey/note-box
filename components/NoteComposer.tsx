@@ -5,7 +5,13 @@ import { useAccount, useWaitForTransactionReceipt, useWriteContract } from "wagm
 
 import { NoteStatusChip } from "@/components/NoteStatusChip";
 import { SaveNoteButton } from "@/components/SaveNoteButton";
-import { APP_ID, APP_NAME, CONTRACT_ADDRESS } from "@/lib/constants";
+import {
+  APP_ID,
+  APP_NAME,
+  BUILDER_CODE,
+  BUILDER_CODE_DATA_SUFFIX,
+  CONTRACT_ADDRESS,
+} from "@/lib/constants";
 import { baseNoteBoxAbi } from "@/lib/contract";
 import { trackTransaction } from "@/utils/track";
 
@@ -63,6 +69,7 @@ export function NoteComposer({ onSaved }: NoteComposerProps) {
       abi: baseNoteBoxAbi,
       functionName: "addNote",
       args: [trimmed],
+      dataSuffix: BUILDER_CODE_DATA_SUFFIX,
     });
   }
 
@@ -120,6 +127,7 @@ export function NoteComposer({ onSaved }: NoteComposerProps) {
         <div className="muted" style={{ display: "grid", gap: 6, fontSize: "0.9rem" }}>
           <span>{count}/120 characters</span>
           <span>{isConnected ? "Base wallet detected" : "Wallet optional for preview mode"}</span>
+          <span>{`Builder code ${BUILDER_CODE} attached for attribution`}</span>
           {error ? <span style={{ color: "var(--clay)" }}>{error.message ?? "Transaction was not completed."}</span> : null}
         </div>
         <div style={{ width: "min(100%, 220px)" }}>
@@ -143,6 +151,7 @@ export function NoteComposer({ onSaved }: NoteComposerProps) {
             <span className="muted" style={{ fontSize: "0.88rem" }}>{fallbackTxHash ? "Transaction tracked" : "Preview saved locally"}</span>
           </div>
           <p style={{ margin: 0, lineHeight: 1.65 }}>{lastSaved}</p>
+          {fallbackTxHash ? <code style={{ fontSize: "0.82rem", wordBreak: "break-all" }}>{fallbackTxHash}</code> : null}
         </div>
       ) : null}
     </form>

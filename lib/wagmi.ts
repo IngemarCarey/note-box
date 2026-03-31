@@ -2,10 +2,15 @@
 
 import { QueryClient } from "@tanstack/react-query";
 import { createConfig, http } from "wagmi";
-import { injected } from "wagmi/connectors";
 import { base } from "wagmi/chains";
+import { injected } from "wagmi/connectors";
+
+import { BUILDER_CODE, BUILDER_CODE_DATA_SUFFIX } from "@/lib/constants";
 
 export const queryClient = new QueryClient();
+
+export const builderCode = BUILDER_CODE;
+export const builderCodeSuffix = BUILDER_CODE_DATA_SUFFIX;
 
 export const wagmiConfig = createConfig({
   chains: [base],
@@ -13,8 +18,9 @@ export const wagmiConfig = createConfig({
   transports: {
     [base.id]: http(),
   },
+  // Base attribution and ERC-8021 analytics suffix.
+  dataSuffix: {
+    value: builderCodeSuffix,
+    required: false,
+  },
 });
-
-// TODO(builder-code): Replace this placeholder with the production builder code
-// data suffix once the final Base builder code value is provided.
-export const builderCodeSuffix = "";
