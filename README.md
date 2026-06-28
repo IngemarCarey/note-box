@@ -55,3 +55,10 @@ git clone https://github.com/IngemarCarey/note-box.git
 Move into the project directory:
 
 ```bash
+cd note-box
+```
+
+Install dependencies:
+
+```bash
+npm install
