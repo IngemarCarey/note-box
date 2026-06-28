@@ -105,3 +105,9 @@ npm run lint
 - UI copy is intended to remain English only.
 
 ## Usage
+
+Visit `/` to open the main app.
+
+Use `/write` to create a note.
+
+Use `/my` to view your notes.
