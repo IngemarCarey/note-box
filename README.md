@@ -34,3 +34,10 @@ The app includes the following routes:
 
 - `/`
 - `/write`
+- `/my`
+- `/notes/[id]`
+- `/archive`
+
+## Contract
+
+The app references the following deployed contract:
