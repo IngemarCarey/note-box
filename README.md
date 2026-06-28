@@ -133,3 +133,11 @@ When changing tracking behavior, review `utils/track.js`.
 Make focused changes that are easy to review.
 
 Prefer clear naming and small components.
+
+Keep TypeScript types explicit where they improve readability.
+
+Test route behavior locally before opening a pull request.
+
+## License
+
+No license information is currently provided in this README.
