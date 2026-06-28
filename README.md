@@ -111,3 +111,11 @@ Visit `/` to open the main app.
 Use `/write` to create a note.
 
 Use `/my` to view your notes.
+
+Use `/notes/[id]` to open a specific note by ID.
+
+Use `/archive` to view archived notes.
+
+## Development Notes
+
+Keep interface copy concise and consistent.
