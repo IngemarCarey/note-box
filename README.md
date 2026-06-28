@@ -77,3 +77,10 @@ Open the local development URL shown in your terminal.
 Run the development server:
 
 ```bash
+npm run dev
+```
+
+Create a production build:
+
+```bash
+npm run build
