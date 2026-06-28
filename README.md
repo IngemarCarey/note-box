@@ -84,3 +84,10 @@ Create a production build:
 
 ```bash
 npm run build
+```
+
+Start the production server after building:
+
+```bash
+npm run start
+```
