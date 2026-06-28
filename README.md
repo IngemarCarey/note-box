@@ -47,3 +47,11 @@ The app references the following deployed contract:
 ## Getting Started
 
 Clone the repository:
+
+```bash
+git clone https://github.com/IngemarCarey/note-box.git
+```
+
+Move into the project directory:
+
+```bash
