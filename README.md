@@ -97,3 +97,11 @@ Run linting if configured:
 ```bash
 npm run lint
 ```
+
+## Project Structure Notes
+
+- `lib/wagmi.ts` contains Wagmi configuration and includes a builder code placeholder for later replacement.
+- `utils/track.js` sends transaction attribution events.
+- UI copy is intended to remain English only.
+
+## Usage
