@@ -27,3 +27,10 @@ It is built with a modern TypeScript stack and uses Wagmi and Viem for chain int
 - TypeScript
 - Wagmi
 - Viem
+
+## Routes
+
+The app includes the following routes:
+
+- `/`
+- `/write`
