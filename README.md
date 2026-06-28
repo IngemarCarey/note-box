@@ -91,3 +91,9 @@ Start the production server after building:
 ```bash
 npm run start
 ```
+
+Run linting if configured:
+
+```bash
+npm run lint
+```
