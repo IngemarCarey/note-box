@@ -69,3 +69,11 @@ Start the development server:
 ```bash
 npm run dev
 ```
+
+Open the local development URL shown in your terminal.
+
+## Common Commands
+
+Run the development server:
+
+```bash
