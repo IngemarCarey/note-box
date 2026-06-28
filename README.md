@@ -41,3 +41,9 @@ The app includes the following routes:
 ## Contract
 
 The app references the following deployed contract:
+
+`BaseNoteBox`: `0x929B1470896e378Bf24d292f284D2B777480250a`
+
+## Getting Started
+
+Clone the repository:
