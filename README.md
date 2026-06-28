@@ -127,3 +127,9 @@ When changing chain configuration, review `lib/wagmi.ts`.
 When changing note-related behavior, verify the relevant route pages.
 
 When changing tracking behavior, review `utils/track.js`.
+
+## Contributing
+
+Make focused changes that are easy to review.
+
+Prefer clear naming and small components.
