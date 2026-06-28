@@ -119,3 +119,11 @@ Use `/archive` to view archived notes.
 ## Development Notes
 
 Keep interface copy concise and consistent.
+
+Preserve the calm, minimal tone of the app.
+
+When changing chain configuration, review `lib/wagmi.ts`.
+
+When changing note-related behavior, verify the relevant route pages.
+
+When changing tracking behavior, review `utils/track.js`.
