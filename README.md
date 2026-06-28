@@ -19,3 +19,11 @@ It is built with a modern TypeScript stack and uses Wagmi and Viem for chain int
 - Browse personal notes from the main notes area.
 - Access archived notes from a separate archive route.
 - Use a minimal interface designed around quiet note-taking.
+- Interact with the deployed `BaseNoteBox` contract.
+
+## Tech Stack
+
+- Next.js
+- TypeScript
+- Wagmi
+- Viem
